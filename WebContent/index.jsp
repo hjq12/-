@@ -18,12 +18,12 @@
          
               <th>年龄</th>
           </tr>
-      <c:forEach items="${list }" var="li">
+      <c:forEach items="${list }" var="li" >
           <tr>
-              <td>{li.getSname()}</td>
-              <td>{li.getSnumber()}</td>
-              <td>{li.getSsex()}</td>
-              <td>{li.getSage()}</td>
+              <td>${li.getSname()}</td>
+              <td>${li.getSnumber()}</td>
+              <td>${li.getSsex()}</td>
+              <td>${li.getSage()}</td>
           </tr>
       </c:forEach>
    </table>

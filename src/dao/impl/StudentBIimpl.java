@@ -18,7 +18,7 @@ public class StudentBIimpl implements StudentBIDao {
 		List<StudentBaseinfo> list=new ArrayList<StudentBaseinfo>();
     	ResultSet rs=null;
     	try {
-			String sql="SELECT * FROM users";
+			String sql="SELECT * FROM studentbaseinfo";
 		    rs=MyDBUtils.queryAll(sql,null);
 			while(rs.next()) {
 			    list.add(new StudentBaseinfo(rs.getString(1),rs.getInt(2),rs.getInt(3),rs.getInt(4)));

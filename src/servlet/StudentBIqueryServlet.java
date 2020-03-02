@@ -26,6 +26,9 @@ public class StudentBIqueryServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		resp.setCharacterEncoding("UTF-8");
     	List<StudentBaseinfo> list=sbs.allquery();
+    	for (StudentBaseinfo stu : list) {
+			System.out.println(stu.getSname());
+		}
     	HttpSession session=req.getSession();
     	if(list!=null) {
     		session.setAttribute("list", list);
