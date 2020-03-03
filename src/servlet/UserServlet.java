@@ -24,8 +24,8 @@ public class UserServlet extends HttpServlet {
     	req.setCharacterEncoding("UTF-8");
     	String name=req.getParameter("name");
     	int age=Integer.parseInt(req.getParameter("age"));
-    	use.setName(name);
-    	use.setAge(age);
+    	use.setName("утвсаЗ");
+    	use.setAge(13);
     	us.save(use);
     }
 	
